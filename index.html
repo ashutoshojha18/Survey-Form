@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="descripton" class="description-text-center">Thanku for taking the time
+                to help us improve.
+            </p>
+        </header>
+        <form id="survey-form" action="https://formcarry.com/s/BnatiiBFL-" method="POST" method="GET">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="number-label " for="age">Age (Optional)</label>
+                <input id="number" class="form-control" type="number" name="number" id="number" min="10" max="99"
+                    placeholder="Enter your age">
+            </div>
+
+            <div class="form-group">
+                <p>Which option describes your best role: </p>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="full-time-learner">Full Time Learner</option>
+                    <option value="prefer-not-to-say">Prefer Not to Say</option>
+                    <option value="Other">other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+
+                <p>Would you reccomend my Profile to other company?</p>
+                <label>
+                    <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>Definitely
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="may-be" class="input-radio">May Be
+                </label>
+                <label>
+                    <input type="radio" name="user-recommend" value="not-sure" class="input-radio">Not Sure
+                </label>
+
+            </div>
+            <div class="form-group">
+                <p>What you would like to improve?</p>
+                <label>
+                    <input type="checkbox" name="prefer" value="front-end-work" class="input-checkbox">Front End Work.
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="back-end-work">Back End Work
+                </label>
+                <label>
+                    <input type="checkbox" name="prefer" class="input-checkbox" value="prjects-work">Projects Work
+                </label>
+            </div>
+
+            <div class="form-group">
+
+                <p>Any Comments or Suggestion?</p>
+                <textarea name="comments" id="comments" class="input-textarea"
+                    placeholder="Input Text here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+
+        </form>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
